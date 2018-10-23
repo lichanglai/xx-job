@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zt.task.demo.dao.oracle.TestMapper">
+
+	 <!-- 根据账户名+密码查询员工信息-->
+	<select id="getAllTestData" resultType="java.util.Map">
+		select  USER_ID  as  userid,USERNAME as  username,name,password,ip   from c_sys_user
+	</select>
+	
+</mapper>
